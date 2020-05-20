@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+header {
+    margin: 10px;
+    margin-left: 0;
+    padding: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+header > button {
+    border: none;
+    margin-left: 40px;
+    background-color: transparent;
+    color: black;
+    /*box-shadow: #212121 0 0 10px;
+    border-radius: 100000px;*/
+}
+
+.dark > * {
+    color: white;
+    background-color: rgb(21, 21, 21);
+}
+
+.dark {
+    background-color: rgb(21, 21, 21);
+}
+
+.dark > header > button {
+    color: white;
+}
+
+.dark > main[data-md] > section[data-md]#c > textarea#a {
+    background-color: #212121;
+    color: white;
+}
+
+*,
+#c {
+    transition: 0.3s;
+}
+
+body,
+html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+}
+
+main[data-md] {
+    display: flex;
+}
+
+section[data-md] {
+    padding: 10px;
+    flex: 50%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Vollkorn", serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+h2 {
+    font-size: 2em;
+}
+
+pre,
+code {
+    font-family: "PT Mono", monospace;
+}
+
+#a {
+    border: none;
+    background-color: white;
+    color: #212121;
+    height: 100%;
+    width: 100%;
+    font-family: "PT Mono", monospace;
+    resize: none;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 40px;
+    border-left: 3px solid rgb(177, 177, 177);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(15, 110, 253);
+}

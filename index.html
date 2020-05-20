@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Vollkorn&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atom-one-light.min.css">
+</head>
+
+<body id="w">
+    <noscript>
+        <h1>warning: requires javascript</h1>
+    </noscript>
+    <header>
+        <button id="f">Full screen</button>
+        <button id="d">Dark mode</button>
+        <button id="e">Clear</button>
+    </header>
+    <main data-md>
+        <section data-md id="c">
+            <textarea id="a" placeholder="Start typing..."></textarea>
+        </section>
+        <section data-md id="v">
+        </section>
+    </main>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
