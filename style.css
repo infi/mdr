@@ -29,13 +29,13 @@ header > button {
     color: white;
 }
 
-.dark > main[data-md] > section[data-md]#c > textarea#a {
+.dark > main[data-md] > section[data-md]#markdownWrapper > textarea#markdown {
     background-color: #212121;
     color: white;
 }
 
 *,
-#c {
+#markdownWrapper {
     transition: 0.3s;
 }
 
@@ -85,7 +85,7 @@ code {
     font-family: "PT Mono", monospace;
 }
 
-#a {
+#markdown {
     border: none;
     background-color: white;
     color: #212121;
@@ -105,4 +105,53 @@ a:link,
 a:visited {
     text-decoration: none;
     color: rgb(15, 110, 253);
+}
+
+header > .no-margin {
+    margin-left: 0;
+}
+
+header > .extra-margin {
+    margin-left: 40px;
+}
+
+button,
+input,
+select {
+    font-family: "Inter", sans-serif;
+}
+
+input,
+select {
+    background-color: white;
+    color: black;
+    border-radius: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+body.dark > * > input,
+body.dark > input,
+body.dark > * > select,
+body.dark > select {
+    background-color: #212121;
+    color: whitesmoke;
+}
+
+#error {
+    color: #a00;
+}
+
+.pretip {
+    color: #777777;
+}
+
+#tip {
+    color: #868686;
 }

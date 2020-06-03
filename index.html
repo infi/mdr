@@ -12,23 +12,31 @@
         href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atom-one-light.min.css">
 </head>
 
-<body id="w">
+<body>
     <noscript>
         <h1>warning: requires javascript</h1>
     </noscript>
     <header>
-        <button id="f">Full screen</button>
-        <button id="d">Dark mode</button>
-        <button id="e">Clear</button>
+        <button id="fullscr">Full screen</button>
+        <button id="darkToggle">Dark mode</button>
+        <button id="clear">Clear</button>
+        <input type="text" placeholder="Name" class="extra-margin" id="savename" maxlength="25" />
+        <button id="save" class="no-margin">Save</button>
+        <select class="extra-margin" id="opener">
+            <option value="mdrnone">Select a save</option>
+        </select>
+        <button id="open" class="no-margin">Open</button>
+        <span id="error"></span>
+        <span id="tip"></span>
     </header>
     <main data-md>
-        <section data-md id="c">
-            <textarea id="a" placeholder="Start typing..."></textarea>
+        <section data-md id="markdownWrapper">
+            <textarea id="markdown" placeholder="Start typing..."></textarea>
         </section>
-        <section data-md id="v">
+        <section data-md id="out">
         </section>
     </main>
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
     <script src="js.js"></script>
 </body>
